@@ -1,0 +1,112 @@
+.main__container {
+    width: 1000px;
+    padding: 0 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+.binary__numbers {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 50px;
+}
+
+.binary__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.button-2 {
+    position: absolute;
+    outline-style: outset;
+    cursor: pointer;
+    background-color: #f2ff00;
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.binary__wrapper-index {
+    position: absolute;
+    top: -20px;
+    background-color: #e8c059;
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.binary__wrapper-number {
+    font-size: 100px;
+    padding: 10px 30px;
+    border-radius: 100px;
+    background-color: #e8c059;
+}
+.binary__wrapper-button {
+    bottom: -20px;
+}
+.binary__wrapper-button-remove {
+    top: -20px;
+    z-index: 2;
+}
+.binary__wrapper-button-remove.active {
+    display: none;
+}
+
+.input__total {
+    width: 100px;
+    text-align: center;
+    border: 0;
+    background-color: #DC9D00;
+    padding: 10px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}
+.main__container-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.main__container-input_2 {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+.input__main {
+    border: 0;
+    width: 100px;
+    background-color: #DC9D00;
+    color: rgb(70, 70, 70);
+    padding: 10px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}
+.input__title {
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.calculated__numbers,
+.calculated__text {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.calculated__numbers {
+    border: 0;
+    background-color: #DC9D00;
+    padding: 10px 0;
+}

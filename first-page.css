@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #DC9D00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__container {
+    display: none;
+    overflow: hidden;
+}
+.modal__container.active {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.583);
+}
+.main__section {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #DC9D00;
+    border-radius: 10px;
+}
+
+.main__close-modal {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width:30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    background-color: aliceblue;
+}
+.main__title {
+    color: #f2ff00;
+    text-align: center;
+    margin-top: 50px;
+}
+.generate {
+    width: 1020px;
+    display: flex;
+    flex: 1;
+    transition: all 0.5s ease;
+}
+.generate__content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+.generate__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 500px;
+}
+.generated__number {
+    padding: 5px 40px;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 4px dotted #DC9D00;
+    background-color: #f6ff00bd;
+}
+.generated__age {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 500px;
+    transform: translateX(10px);
+    justify-content: center;
+}
+.generated__age a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.button {
+    cursor: pointer;
+    padding: 10px 40px;
+    outline-style: outset;
+    background-color: #f2ff00;
+}
+
+.button__next {
+   padding: 10px 126px;
+}
+
+
+.button:active {
+    background-color: #c0aa06bd;
+}
+
+.modal__lost,
+.modal__congratulation {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.583);
+}
+.congratulation__section {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: #DC9D00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modal__lost.active ,
+.modal__congratulation.active {
+    display: flex;
+}
+.congratulation__title {
+    color: #f2ff00;
+    text-align: center;
+}
+.play__again_2,
+.play__again {
+    margin-top: 50px;
+}
+
+
+
